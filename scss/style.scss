@@ -1,0 +1,88 @@
+// variables
+
+$light-yellow: #fdf7e7;
+$med-yellow: #ffebb4;
+$dark-green: #167c1a;
+$dark-blue: #1678c1;
+$med-blue: #e0f2ff;
+$light-blue: #e2f0f0;
+
+// fonts
+$font-roboto: Roboto;
+$fontweight-light300: 300;
+$fontweight-bold700: 700;
+
+@mixin paragraph {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: $fontweight-light300;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+}
+
+@mixin button {
+  border-radius: 18px;
+  @include paragraph;
+  font-weight: $fontweight-bold700;
+}
+
+// reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// nav
+
+.navigationflexspacing {
+  .firstcontent {
+    width: 60%;
+
+    p {
+      width: 5%;
+    }
+  }
+
+  .thirdcontent {
+    list-style-type: none;
+    @include paragraph;
+  }
+}
+
+// spacing
+
+.horizontalspacing {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+// borders
+
+.borderright {
+  border-right: 1.5px solid #000;
+}
+
+// fonts
+
+.smallparagraph {
+  @include paragraph;
+  font-size: 10px;
+}
+
+// buttons
+
+button.loginbtncertifai {
+  color: $dark-blue;
+  border: 1px solid $dark-blue;
+  @include button;
+}
+
+button.genbtncertifai {
+  background-color: $dark-blue;
+  color: #fff;
+  border: 1px solid $dark-blue;
+  @include button;
+}
