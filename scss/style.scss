@@ -8,6 +8,7 @@ $dark-blue: #1678c1;
 $med-blue: #e0f2ff;
 $light-blue: #e2f0f0;
 $med-grey: #f1f1f1;
+$med-grey2: #e8e8e8;
 $dark-grey: #a8a8a8;
 $torquise: #37a3a5;
 
@@ -116,6 +117,10 @@ html {
   font-weight: $fontweight-bold900;
 }
 
+.bold700 {
+  font-weight: $fontweight-bold700 !important;
+}
+
 .generalparagraph {
   @include paragraph;
   font-size: 12px;
@@ -129,6 +134,11 @@ html {
 .medparagraph {
   @include paragraph;
   font-size: 14px;
+  line-height: 16px;
+}
+.medparagraph2 {
+  @include paragraph;
+  font-size: 16px;
   line-height: 16px;
 }
 .biggerparagraph {
@@ -199,6 +209,10 @@ button.genbtncertifai {
     background-color: #fff;
     color: $dark-blue;
   }
+
+  &.rounded10 {
+    border-radius: 10px;
+  }
 }
 
 button.smallbtn {
@@ -250,6 +264,10 @@ button.greybtn {
   background-color: $dark-grey;
 }
 
+.greybgmed2 {
+  background-color: $med-grey2;
+}
+
 .bluecolor {
   color: $dark-blue;
 }
@@ -260,6 +278,9 @@ button.greybtn {
 
 .bluecolorbg {
   background-color: $dark-blue;
+}
+.medbluecolorbg {
+  background-color: $med-blue;
 }
 
 .lightbluecolorbg {
@@ -294,6 +315,13 @@ button.greybtn {
   left: 0;
   right: 0;
   bottom: -20px;
+}
+
+.absolutesvg2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
 }
 
 .absoluteicon1 {

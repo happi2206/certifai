@@ -61,6 +61,10 @@ html body main {
   font-weight: 900;
 }
 
+.bold700 {
+  font-weight: 700 !important;
+}
+
 .generalparagraph {
   font-family: Roboto;
   font-style: normal;
@@ -89,6 +93,17 @@ html body main {
   line-height: 12px;
   letter-spacing: -0.03em;
   font-size: 14px;
+  line-height: 16px;
+}
+
+.medparagraph2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  font-size: 16px;
   line-height: 16px;
 }
 
@@ -213,6 +228,9 @@ button.genbtncertifai:hover {
   background-color: #fff;
   color: #1678c1;
 }
+button.genbtncertifai.rounded10 {
+  border-radius: 10px;
+}
 
 button.smallbtn {
   background-color: #167c1a;
@@ -272,6 +290,10 @@ button.greybtn:hover {
   background-color: #a8a8a8;
 }
 
+.greybgmed2 {
+  background-color: #e8e8e8;
+}
+
 .bluecolor {
   color: #1678c1;
 }
@@ -282,6 +304,10 @@ button.greybtn:hover {
 
 .bluecolorbg {
   background-color: #1678c1;
+}
+
+.medbluecolorbg {
+  background-color: #e0f2ff;
 }
 
 .lightbluecolorbg {
@@ -314,6 +340,13 @@ button.greybtn:hover {
   left: 0;
   right: 0;
   bottom: -20px;
+}
+
+.absolutesvg2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
 }
 
 .absoluteicon1 {
