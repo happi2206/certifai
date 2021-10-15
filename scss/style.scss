@@ -2,15 +2,21 @@
 
 $light-yellow: #fdf7e7;
 $med-yellow: #ffebb4;
+$dark-yellow: #f8b501;
 $dark-green: #167c1a;
 $dark-blue: #1678c1;
 $med-blue: #e0f2ff;
 $light-blue: #e2f0f0;
+$med-grey: #f1f1f1;
+$dark-grey: #a8a8a8;
+$torquise: #37a3a5;
 
 // fonts
 $font-roboto: Roboto;
+$font-merriweather: Merriweather;
 $fontweight-light300: 300;
 $fontweight-bold700: 700;
+$fontweight-bold900: 900;
 
 @mixin paragraph {
   font-family: $font-roboto;
@@ -18,6 +24,15 @@ $fontweight-bold700: 700;
   font-size: 12px;
   font-weight: $fontweight-light300;
   line-height: 12px;
+  letter-spacing: -0.03em;
+}
+
+@mixin header {
+  font-family: $font-merriweather;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
   letter-spacing: -0.03em;
 }
 
@@ -33,6 +48,18 @@ $fontweight-bold700: 700;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden !important;
+
+  body {
+    overflow-x: hidden !important;
+
+    main {
+      overflow-y: hidden;
+    }
+  }
 }
 
 // nav
@@ -59,25 +86,106 @@ $fontweight-bold700: 700;
   margin-right: 90px;
 }
 
+.verticalmargincenter {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.horizontalpadding {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 // borders
 
 .borderright {
   border-right: 1.5px solid #000;
 }
 
+.dottedborderbottom {
+  border-bottom: 1px dashed #000;
+}
+
+.dottedbordertop {
+  border-top: 1px dashed #000;
+}
+
 // fonts
+
+.bold900 {
+  font-weight: $fontweight-bold900;
+}
+
+.generalparagraph {
+  @include paragraph;
+  font-size: 12px;
+}
 
 .smallparagraph {
   @include paragraph;
   font-size: 10px;
 }
 
-// buttons
+.medparagraph {
+  @include paragraph;
+  font-size: 14px;
+  line-height: 16px;
+}
+.biggerparagraph {
+  @include paragraph;
+  font-size: 18px;
+  line-height: 22px;
+}
+.biggestparagraph {
+  @include paragraph;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.mainmerriheader {
+  @include header;
+}
+
+.mainmerriheader2 {
+  @include header;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.mainmerriheader3 {
+  @include header;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.mainmerriheader4 {
+  @include header;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.mainmerriheader5 {
+  @include header;
+  font-size: 20px;
+  line-height: 21px;
+}
+.smallmerriheader {
+  @include header;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+// buttons and links
 
 button.loginbtncertifai {
   color: $dark-blue;
   border: 1px solid $dark-blue;
   @include button;
+
+  &:hover {
+    background-color: $dark-blue;
+    color: #fff;
+  }
 }
 
 button.genbtncertifai {
@@ -85,4 +193,303 @@ button.genbtncertifai {
   color: #fff;
   border: 1px solid $dark-blue;
   @include button;
+
+  &:hover {
+    border: 1px solid $dark-blue;
+    background-color: #fff;
+    color: $dark-blue;
+  }
+}
+
+button.smallbtn {
+  background-color: $dark-green;
+  color: #fff;
+  border: 1px solid $dark-green;
+  @include button;
+  border-radius: 0;
+
+  &:hover {
+    border: 1px solid $dark-green;
+    background-color: #fff;
+    color: $dark-green;
+  }
+}
+
+button.greybtn {
+  background-color: $dark-grey;
+  color: #fff;
+  border: 1px solid $dark-grey;
+  @include button;
+  border-radius: 0;
+
+  &:hover {
+    border: 1px solid $dark-grey;
+    background-color: #000;
+    color: $dark-grey;
+  }
+}
+
+.boxlink {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+// colors
+
+.torquise {
+  color: $torquise;
+}
+
+.greybgdark {
+  background-color: $dark-grey;
+}
+
+.bluecolor {
+  color: $dark-blue;
+}
+
+.darkyellowcolor {
+  color: $dark-yellow;
+}
+
+.bluecolorbg {
+  background-color: $dark-blue;
+}
+
+.lightbluecolorbg {
+  background-color: $med-blue;
+}
+
+.boltyellow {
+  color: #ffc000;
+}
+
+// sections
+
+.topsection {
+  height: 80vh;
+  overflow-x: hidden;
+}
+
+.relativecontainer {
+  position: relative;
+}
+
+.contentwidth {
+  width: 50%;
+}
+
+.liststyle {
+  list-style-type: none;
+}
+
+.absolutesvg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+
+.absoluteicon1 {
+  position: absolute;
+  top: -50px;
+  z-index: 2;
+}
+
+.absoluteimage1 {
+  position: absolute;
+  top: 90px;
+  z-index: -1;
+  left: 120px;
+}
+
+.absoluteicon2 {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  z-index: 2;
+}
+
+.absoluteimage2 {
+  position: absolute;
+  top: 140px;
+  z-index: -1;
+  right: 30px;
+}
+
+.absoluteimage3 {
+  position: absolute;
+  top: -70px;
+  z-index: -1;
+  right: 200px;
+}
+
+.z4 {
+  z-index: 5;
+}
+
+.imgcontain {
+  width: 160px;
+  height: 193px;
+}
+
+//
+
+.greyboxcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 3;
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    '. greybox1 greybox2 .'
+    '. greybox3 greybox4 .'
+    '. . . .';
+
+  .greybox1 {
+    grid-area: greybox1;
+  }
+
+  .greybox2 {
+    grid-area: greybox2;
+  }
+
+  .greybox3 {
+    grid-area: greybox3;
+  }
+
+  .greybox4 {
+    grid-area: greybox4;
+  }
+
+  .greyboxes {
+    background-color: $med-grey;
+  }
+}
+
+//accordion
+.blueaccordion {
+  width: 80vw;
+}
+
+.accordionlogo {
+  width: 78px;
+  height: 67px;
+}
+
+.roundedgreycontainer {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+//
+
+// mobile and tabs responsive
+
+@media (max-width: 1270px) {
+  .navigationflexspacing {
+    .firstcontent {
+      width: 40%;
+    }
+  }
+
+  .imgcontain {
+    width: 130px;
+    height: 143px;
+  }
+
+  .horizontalpadding {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 904px) {
+  .navigationflexspacing {
+    .firstcontent {
+      width: 20%;
+    }
+  }
+
+  .horizontalspacing {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .horizontalpadding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 967.9px) {
+  .imgcontain {
+    width: 100px;
+    height: 123px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .width100 {
+    width: 100%;
+  }
+
+  .contentwidth {
+    width: 100%;
+  }
+
+  .absoluteimage2 {
+    top: 240px;
+  }
+
+  .absoluteimage3 {
+    top: -50px;
+  }
+
+  .absoluteimage1 {
+    top: 90px;
+    left: 0px;
+  }
+
+  .absoluteicon1 {
+    width: 193px;
+    height: 191px;
+  }
+
+  .imgcontain {
+    width: 55px;
+    height: 65px;
+  }
+
+  .greyboxcontainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'greybox1 greybox2 '
+      ' greybox3 greybox4 ';
+
+    .greyboxes {
+      border-radius: 10px;
+    }
+  }
+
+  .mobilenavigation {
+    border-bottom: 1px solid #1678c1;
+  }
+
+  .horizontalpadding {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 547.9px) {
+  .horizontalpadding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
