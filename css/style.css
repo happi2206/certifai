@@ -193,6 +193,18 @@ html body main {
   line-height: 15px;
 }
 
+.merriparagraph {
+  font-family: Merriweather;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 button.loginbtncertifai {
   color: #1678c1;
   border: 1px solid #1678c1;
@@ -286,6 +298,14 @@ button.greybtn:hover {
   color: #37a3a5;
 }
 
+.medgreybg {
+  background-color: #f1f1f1;
+}
+
+.medyellow2bg {
+  background-color: #fce2b1;
+}
+
 .greybgdark {
   background-color: #a8a8a8;
 }
@@ -321,6 +341,7 @@ button.greybtn:hover {
 .topsection {
   height: 80vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .relativecontainer {
@@ -430,6 +451,32 @@ button.greybtn:hover {
   background-color: #f1f1f1;
 }
 
+.footerflex .flex1 {
+  width: 8%;
+}
+.footerflex .flex2 {
+  width: 40%;
+}
+.footerflex .flex3 {
+  width: 10%;
+}
+
+@media (max-height: 762px) {
+  .topsection {
+    height: 90vh;
+  }
+}
+@media (max-height: 675px) {
+  .topsection {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+@media (max-height: 562px) {
+  .topsection {
+    height: 130vh;
+  }
+}
 @media (max-width: 1270px) {
   .navigationflexspacing .firstcontent {
     width: 40%;
@@ -467,6 +514,10 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 767.9px) {
+  .dottedborderbottommobile {
+    border-bottom: 1px dashed #000;
+  }
+
   .width100 {
     width: 100%;
   }
@@ -513,6 +564,28 @@ button.greybtn:hover {
   .horizontalpadding {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media (max-width: 607.9px) {
+  .mainmerriheader {
+    font-size: 16px;
+    line-height: 21px;
+    z-index: 12;
+  }
+  .mainmerriheader.bluecolor {
+    color: #167c1a;
+  }
+
+  .biggerparagraph,
+.medparagraph2,
+.biggestparagraph {
+    font-size: 12px;
+  }
+
+  .mainmerriheader3,
+.mainmerriheader5,
+.mainmerriheader4 {
+    font-size: 16px;
   }
 }
 @media (max-width: 547.9px) {
