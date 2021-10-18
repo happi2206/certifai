@@ -46,6 +46,11 @@ html body main {
   padding-right: 200px;
 }
 
+.horizontalpadding2 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .borderright {
   border-right: 1.5px solid #000;
 }
@@ -63,8 +68,12 @@ html body main {
   border-radius: 20px;
 }
 
+.borderradius20 {
+  border-radius: 20px;
+}
+
 .bold900 {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 .bold700 {
@@ -79,6 +88,7 @@ html body main {
   line-height: 12px;
   letter-spacing: -0.03em;
   font-size: 12px;
+  line-height: 15px;
 }
 
 .smallparagraph {
@@ -227,6 +237,7 @@ button.loginbtncertifai {
   color: #1678c1;
   border: 1px solid #1678c1;
   border-radius: 18px;
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-size: 12px;
@@ -245,6 +256,7 @@ button.genbtncertifai {
   color: #fff;
   border: 1px solid #1678c1;
   border-radius: 18px;
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-size: 12px;
@@ -262,11 +274,35 @@ button.genbtncertifai.rounded10 {
   border-radius: 10px;
 }
 
+button.whitebtn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+button.whitebtn:hover {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+button.whitebtn.rounded10 {
+  border-radius: 10px;
+}
+
 button.smallbtn {
   background-color: #167c1a;
   color: #fff;
   border: 1px solid #167c1a;
   border-radius: 18px;
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-size: 12px;
@@ -287,6 +323,7 @@ button.greybtn {
   color: #fff;
   border: 1px solid #a8a8a8;
   border-radius: 18px;
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-size: 12px;
@@ -336,12 +373,32 @@ button.greybtn:hover {
   background-color: #f3f3f3;
 }
 
+.med-grey-bg2 {
+  background-color: #f2f2f2;
+}
+
+.med-grey-bg3 {
+  background-color: #979797;
+}
+
+.infobg {
+  background-color: #ffedcb;
+}
+
 .bluecolor {
   color: #1678c1;
 }
 
 .greencolor {
   color: #167c1a;
+}
+
+.lightgreenbg {
+  background-color: #d0ebd1;
+}
+
+.greenbg {
+  background-color: #167c1a;
 }
 
 .darkyellowcolor {
@@ -362,6 +419,10 @@ button.greybtn:hover {
 
 .boltyellow {
   color: #ffc000;
+}
+
+.whitebg {
+  background-color: #fff;
 }
 
 .topsection {

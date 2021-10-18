@@ -4,12 +4,15 @@ $light-yellow: #fdf7e7;
 $med-yellow: #ffebb4;
 $med-yellow2: #fce2b1;
 $dark-yellow: #f8b501;
+$light-green: #d0ebd1;
 $dark-green: #167c1a;
 $dark-blue: #1678c1;
 $med-blue: #e0f2ff;
 $light-blue: #e2f0f0;
 $med-grey: #f1f1f1;
 $med-grey-bg: #f3f3f3;
+$med-grey-bg2: #f2f2f2;
+$med-grey-bg3: #979797;
 $med-grey2: #e8e8e8;
 $dark-grey: #a8a8a8;
 $torquise: #37a3a5;
@@ -41,6 +44,7 @@ $fontweight-bold900: 900;
 
 @mixin button {
   border-radius: 18px;
+  cursor: pointer;
   @include paragraph;
   font-weight: $fontweight-bold700;
 }
@@ -100,6 +104,11 @@ html {
   padding-right: 200px;
 }
 
+.horizontalpadding2 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 // borders
 
 .borderright {
@@ -119,10 +128,14 @@ html {
   border-radius: 20px;
 }
 
+.borderradius20 {
+  border-radius: 20px;
+}
+
 // fonts
 
 .bold900 {
-  font-weight: $fontweight-bold900;
+  font-weight: $fontweight-bold900 !important;
 }
 
 .bold700 {
@@ -132,6 +145,7 @@ html {
 .generalparagraph {
   @include paragraph;
   font-size: 12px;
+  line-height: 15px;
 }
 
 .smallparagraph {
@@ -235,6 +249,23 @@ button.genbtncertifai {
   }
 }
 
+button.whitebtn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  @include button;
+
+  &:hover {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+  }
+
+  &.rounded10 {
+    border-radius: 10px;
+  }
+}
+
 button.smallbtn {
   background-color: $dark-green;
   color: #fff;
@@ -300,12 +331,31 @@ button.greybtn {
   background-color: $med-grey-bg;
 }
 
+.med-grey-bg2 {
+  background-color: $med-grey-bg2;
+}
+.med-grey-bg3 {
+  background-color: $med-grey-bg3;
+}
+
+.infobg {
+  background-color: #ffedcb;
+}
+
 .bluecolor {
   color: $dark-blue;
 }
 
 .greencolor {
   color: $dark-green;
+}
+
+.lightgreenbg {
+  background-color: $light-green;
+}
+
+.greenbg {
+  background-color: $dark-green;
 }
 
 .darkyellowcolor {
@@ -325,6 +375,10 @@ button.greybtn {
 
 .boltyellow {
   color: #ffc000;
+}
+
+.whitebg {
+  background-color: #fff;
 }
 
 // sections
