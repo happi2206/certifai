@@ -58,6 +58,11 @@ html body main {
   border-top: 1px dashed #000;
 }
 
+.roundedbordercircle {
+  border: 1.5px solid #000;
+  border-radius: 20px;
+}
+
 .bold900 {
   font-weight: 900;
 }
@@ -194,6 +199,18 @@ html body main {
   line-height: 15px;
 }
 
+.smallmerriheader2 {
+  font-family: Merriweather;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
 .merriparagraph {
   font-family: Merriweather;
   font-size: 35px;
@@ -315,8 +332,16 @@ button.greybtn:hover {
   background-color: #e8e8e8;
 }
 
+.med-grey-bg {
+  background-color: #f3f3f3;
+}
+
 .bluecolor {
   color: #1678c1;
+}
+
+.greencolor {
+  color: #167c1a;
 }
 
 .darkyellowcolor {
@@ -341,6 +366,12 @@ button.greybtn:hover {
 
 .topsection {
   height: 80vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.topsection2 {
+  height: 40vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -703,9 +734,9 @@ button.greybtn:hover {
     height: 60vh;
   }
 }
-@media (max-width: 410.9px) {
+@media (max-width: 486.9px) {
   .topsection {
-    height: 80vh;
+    height: 100vh;
   }
 }
 

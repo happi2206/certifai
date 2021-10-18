@@ -9,6 +9,7 @@ $dark-blue: #1678c1;
 $med-blue: #e0f2ff;
 $light-blue: #e2f0f0;
 $med-grey: #f1f1f1;
+$med-grey-bg: #f3f3f3;
 $med-grey2: #e8e8e8;
 $dark-grey: #a8a8a8;
 $torquise: #37a3a5;
@@ -113,6 +114,11 @@ html {
   border-top: 1px dashed #000;
 }
 
+.roundedbordercircle {
+  border: 1.5px solid #000;
+  border-radius: 20px;
+}
+
 // fonts
 
 .bold900 {
@@ -184,6 +190,12 @@ html {
 .smallmerriheader {
   @include header;
   font-size: 12px;
+  line-height: 15px;
+}
+.smallmerriheader2 {
+  @include header;
+  font-size: 12px;
+  font-weight: 400;
   line-height: 15px;
 }
 .merriparagraph {
@@ -284,8 +296,16 @@ button.greybtn {
   background-color: $med-grey2;
 }
 
+.med-grey-bg {
+  background-color: $med-grey-bg;
+}
+
 .bluecolor {
   color: $dark-blue;
+}
+
+.greencolor {
+  color: $dark-green;
 }
 
 .darkyellowcolor {
@@ -311,6 +331,12 @@ button.greybtn {
 
 .topsection {
   height: 80vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.topsection2 {
+  height: 40vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -725,8 +751,8 @@ button.greybtn {
   }
 }
 
-@media (max-width: 410.9px) {
+@media (max-width: 486.9px) {
   .topsection {
-    height: 80vh;
+    height: 100vh;
   }
 }
