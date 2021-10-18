@@ -60,6 +60,7 @@ html {
 
     main {
       overflow-y: hidden;
+      overflow-x: hidden;
     }
   }
 }
@@ -340,6 +341,33 @@ button.greybtn {
   bottom: -50px;
 }
 
+.relativecontainer.people .col-4 {
+  z-index: 2;
+}
+
+.absolutepeople {
+  position: absolute;
+  left: -60px;
+  z-index: 1;
+  right: 0;
+
+  &.absolutesvgpeople1 {
+    top: 80px;
+  }
+
+  &.absolutesvgpeople2 {
+    top: 120px;
+  }
+
+  &.absolutesvgpeople3 {
+    top: 160px;
+  }
+
+  &.absolutesvgpeople4 {
+    top: 200px;
+  }
+}
+
 .absoluteicon1 {
   position: absolute;
   top: -50px;
@@ -449,6 +477,17 @@ button.greybtn {
 
 // mobile and tabs responsive
 
+@media (max-width: 1015px) {
+  .topsection {
+    height: 100vh;
+  }
+}
+@media (max-width: 752px) {
+  .topsection {
+    height: 80vh;
+  }
+}
+
 @media (max-height: 762px) {
   .topsection {
     height: 90vh;
@@ -468,10 +507,25 @@ button.greybtn {
   }
 }
 
-@media (max-height: 1077px) {
-}
-
 @media (max-width: 1270px) {
+  .absolutepeople {
+    &.absolutesvgpeople1 {
+      top: 60px;
+    }
+
+    &.absolutesvgpeople2 {
+      top: 100px;
+    }
+
+    &.absolutesvgpeople3 {
+      top: 140px;
+    }
+
+    &.absolutesvgpeople4 {
+      top: 180px;
+    }
+  }
+
   .navigationflexspacing {
     .firstcontent {
       width: 40%;
@@ -490,6 +544,23 @@ button.greybtn {
 }
 
 @media (max-width: 904px) {
+  .absolutepeople {
+    &.absolutesvgpeople1 {
+      top: 40px;
+    }
+
+    &.absolutesvgpeople2 {
+      top: 80px;
+    }
+
+    &.absolutesvgpeople3 {
+      top: 120px;
+    }
+
+    &.absolutesvgpeople4 {
+      top: 160px;
+    }
+  }
   .navigationflexspacing {
     .firstcontent {
       width: 20%;
@@ -515,6 +586,41 @@ button.greybtn {
 }
 
 @media (max-width: 767.9px) {
+  .absolutepeople {
+    &.absolutesvgpeople1 {
+      top: 10px;
+    }
+
+    &.absolutesvgpeople2 {
+      top: 40px;
+    }
+
+    &.absolutesvgpeople3 {
+      top: 70px;
+    }
+
+    &.absolutesvgpeople4 {
+      top: 100px;
+    }
+  }
+  .horizontalspacing {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .footerflex {
+    overflow-x: hidden;
+    .flex1 {
+      width: 30%;
+    }
+    .flex2 {
+      width: 40%;
+    }
+    .flex3 {
+      width: 30%;
+    }
+  }
+
   .dottedborderbottommobile {
     border-bottom: 1px dashed #000;
   }
@@ -592,6 +698,11 @@ button.greybtn {
   .mainmerriheader5,
   .mainmerriheader4 {
     font-size: 16px;
+  }
+
+  .horizontalspacing.people {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
