@@ -614,7 +614,15 @@ button.greybtn:hover {
   }
 
   .contentwidth {
-    width: 100%;
+    width: 65%;
+  }
+
+  .verticalmargincenter {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .verticalmargincenter.potential {
+    margin-top: 40px;
   }
 
   .absoluteimage2 {
@@ -677,6 +685,7 @@ button.greybtn:hover {
 .mainmerriheader5,
 .mainmerriheader4 {
     font-size: 16px;
+    line-height: 20px;
   }
 
   .horizontalspacing.people {
@@ -688,6 +697,11 @@ button.greybtn:hover {
   .horizontalpadding {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media (max-width: 447.9px) {
+  .topsection {
+    height: 150vh;
   }
 }
 
