@@ -51,8 +51,26 @@ html body main {
   padding-right: 80px;
 }
 
+.absoluteheight {
+  overflow-y: hidden;
+}
+
+.absolutesection {
+  position: absolute;
+  z-index: 12;
+  bottom: -110px;
+}
+
+.sectionrelative {
+  height: 20vh;
+}
+
 .borderright {
   border-right: 1.5px solid #000;
+}
+
+.whiteborderright {
+  border-right: 1.5px solid #fff;
 }
 
 .dottedborderbottom {
@@ -630,6 +648,11 @@ button.greybtn:hover {
     padding-left: 150px;
     padding-right: 150px;
   }
+
+  .horizontalpadding2 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 @media (max-width: 904px) {
   .absolutepeople.absolutesvgpeople1 {
@@ -657,6 +680,11 @@ button.greybtn:hover {
   .horizontalpadding {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .horizontalpadding2 {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 967.9px) {
