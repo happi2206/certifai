@@ -699,10 +699,5 @@ button.greybtn:hover {
     padding-right: 10px;
   }
 }
-@media (max-width: 447.9px) {
-  .topsection {
-    height: 150vh;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
