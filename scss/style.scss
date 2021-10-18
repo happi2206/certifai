@@ -296,6 +296,18 @@ button.smallbtn {
     color: $dark-green;
   }
 }
+button.closemodalbtn.btn {
+  background-color: $med-grey-bg3;
+  color: #fff;
+  border: 1px solid #fff;
+  @include button;
+
+  &:hover {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+  }
+}
 
 button.greybtn {
   background-color: $dark-grey;
@@ -558,6 +570,12 @@ button.greybtn {
 }
 //
 
+// modals
+
+.modal-header.headerbg {
+  background-color: #e3e3e3;
+}
+
 // footer
 
 .footerflex {
@@ -693,6 +711,10 @@ button.greybtn {
 }
 
 @media (max-width: 767.9px) {
+  .modal-header.headerbg {
+    background-color: #939393;
+  }
+
   .absolutepeople {
     &.absolutesvgpeople1 {
       top: 10px;
@@ -804,9 +826,11 @@ button.greybtn {
   }
 
   .biggerparagraph,
+  .merriparagraph,
   .medparagraph2,
   .biggestparagraph {
     font-size: 12px;
+    line-height: 15px;
   }
 
   .mainmerriheader3,
