@@ -703,5 +703,10 @@ button.greybtn:hover {
     height: 60vh;
   }
 }
+@media (max-width: 410.9px) {
+  .topsection {
+    height: 80vh;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
