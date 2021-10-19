@@ -13,6 +13,7 @@ $med-grey: #f1f1f1;
 $med-grey-bg: #f3f3f3;
 $med-grey-bg2: #f2f2f2;
 $med-grey-bg3: #979797;
+$med-grey-bg4: #c9c9c9;
 $med-grey2: #e8e8e8;
 $dark-grey: #a8a8a8;
 $torquise: #37a3a5;
@@ -392,6 +393,9 @@ button.greybtn {
 }
 .med-grey-bg3 {
   background-color: $med-grey-bg3;
+}
+.med-grey-bg4 {
+  background-color: $med-grey-bg4;
 }
 
 .infobg {
