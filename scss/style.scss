@@ -149,6 +149,21 @@ html {
   border-radius: 20px;
 }
 
+.numbercircle {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    border-top: 2px solid #fff;
+  }
+}
+
 // fonts
 
 .bold900 {
@@ -296,6 +311,18 @@ button.smallbtn {
     color: $dark-green;
   }
 }
+button.downloadbtn {
+  background-color: $dark-green;
+  color: #fff;
+  border: 1px solid #fff;
+  @include button;
+
+  &:hover {
+    border: 1px solid $dark-green;
+    background-color: #fff;
+    color: $dark-green;
+  }
+}
 button.closemodalbtn.btn {
   background-color: $med-grey-bg3;
   color: #fff;
@@ -419,7 +446,7 @@ button.greybtn {
 }
 
 .topsection2 {
-  height: 40vh;
+  min-height: 40vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -489,7 +516,7 @@ button.greybtn {
 
 .absolutefacilators {
   position: absolute;
-  left: 50px;
+  left: 20px;
   z-index: -1;
   right: 0;
 
@@ -607,9 +634,25 @@ button.greybtn {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   z-index: 3;
-  max-height: 230px;
   grid-auto-flow: row;
+  background-color: $dark-green;
   grid-template-areas: 'greenbox1 greenbox2 greenbox3 greenbox4';
+
+  .greenbox1 {
+    grid-area: greenbox1;
+  }
+
+  .greenbox2 {
+    grid-area: greenbox2;
+  }
+
+  .greenbox3 {
+    grid-area: greenbox3;
+  }
+
+  .greenbox4 {
+    grid-area: greenbox4;
+  }
 }
 
 //accordion
@@ -769,6 +812,28 @@ button.greybtn {
 }
 
 @media (max-width: 767.9px) {
+  .afterabsolute {
+    margin-top: 250px;
+  }
+  .resetmobilebottom {
+    .border-bottom {
+      border-bottom: none !important;
+    }
+  }
+
+  .mobileborderright {
+    border-right: 1px solid #fff;
+  }
+  .mobilewhiteborderbottom {
+    border-bottom: 1px solid #fff;
+  }
+  .greenboxcontainer {
+    grid-template-columns: 1fr;
+
+    grid-auto-flow: row;
+    grid-template-areas: 'greenbox1' 'greenbox2' 'greenbox3' 'greenbox4';
+  }
+
   .absolutefacilators {
     left: 0px;
   }
