@@ -487,6 +487,12 @@ button.greybtn:hover {
   list-style-type: none;
 }
 
+.absoluteflex {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 .absolutesvg {
   position: absolute;
   left: 0;
@@ -522,6 +528,41 @@ button.greybtn:hover {
 }
 .absolutepeople.absolutesvgpeople4 {
   top: 200px;
+}
+
+.relativecontainer2 {
+  position: relative;
+}
+
+.absolutefacilators {
+  position: absolute;
+  left: 50px;
+  z-index: -1;
+  right: 0;
+}
+.absolutefacilators.absolutesvgpeople1 {
+  top: 100px;
+}
+.absolutefacilators.absolutesvgpeople2 {
+  top: 160px;
+}
+.absolutefacilators.absolutesvgpeople3 {
+  top: 210px;
+}
+.absolutefacilators.absolutesvgpeople4 {
+  top: 270px;
+}
+.absolutefacilators.absolutesvgpeople5 {
+  top: 330px;
+}
+.absolutefacilators.absolutesvgpeople6 {
+  top: 390px;
+}
+.absolutefacilators.absolutesvgpeople7 {
+  top: 450px;
+}
+.absolutefacilators.absolutesvgpeople8 {
+  top: 510px;
 }
 
 .absoluteicon1 {
@@ -589,6 +630,15 @@ button.greybtn:hover {
 }
 .greyboxcontainer .greyboxes {
   background-color: #f1f1f1;
+}
+
+.greenboxcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 3;
+  max-height: 230px;
+  grid-auto-flow: row;
+  grid-template-areas: "greenbox1 greenbox2 greenbox3 greenbox4";
 }
 
 .blueaccordion {
@@ -718,6 +768,27 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 767.9px) {
+  .absolutefacilators {
+    left: 0px;
+  }
+
+  .facilatorperson {
+    width: 90px;
+    height: 90px;
+  }
+
+  .whitebg.box {
+    background-color: #f3f3f3;
+  }
+  .whitebg h2.mainmerriheader2,
+.whitebg p.medparagraph {
+    font-size: 10px;
+  }
+
+  .largemobilebtn button.btn {
+    width: 100%;
+  }
+
   .modal-header.headerbg {
     background-color: #939393;
   }
