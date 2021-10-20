@@ -41,6 +41,11 @@ html body main {
   margin-bottom: 60px;
 }
 
+.verticalmargincenter2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .horizontalpadding {
   padding-left: 200px;
   padding-right: 200px;
@@ -62,7 +67,16 @@ html body main {
 }
 
 .sectionrelative {
-  height: 20vh;
+  position: relative;
+  top: 120px;
+}
+
+.afterabsolute {
+  margin-top: 200px;
+}
+
+.boldbordertopbig {
+  border-bottom: 5px solid #1678c1;
 }
 
 .borderright {
@@ -140,7 +154,7 @@ html body main {
   line-height: 12px;
   letter-spacing: -0.03em;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
 }
 
 .medparagraph2 {
@@ -173,7 +187,7 @@ html body main {
   line-height: 12px;
   letter-spacing: -0.03em;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 25px;
 }
 
 .mainmerriheader {
@@ -268,6 +282,7 @@ button.loginbtncertifai {
   color: #1678c1;
   border: 1px solid #1678c1;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -287,6 +302,7 @@ button.genbtncertifai {
   color: #fff;
   border: 1px solid #1678c1;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -307,9 +323,10 @@ button.genbtncertifai.rounded10 {
 
 button.whitebtn {
   background-color: #fff;
-  color: #000;
+  color: #1678c1;
   border: 1px solid #fff;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -320,8 +337,8 @@ button.whitebtn {
   font-weight: 700;
 }
 button.whitebtn:hover {
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #1678c1;
+  background-color: #1678c1;
   color: #fff;
 }
 button.whitebtn.rounded10 {
@@ -333,6 +350,7 @@ button.smallbtn {
   color: #fff;
   border: 1px solid #167c1a;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -354,6 +372,7 @@ button.downloadbtn {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -374,6 +393,7 @@ button.closemodalbtn.btn {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -394,6 +414,7 @@ button.greybtn {
   color: #fff;
   border: 1px solid #a8a8a8;
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   font-family: Roboto;
   font-style: normal;
@@ -507,9 +528,10 @@ button.greybtn:hover {
 }
 
 .topsection2 {
-  min-height: 40vh;
+  height: 40vh;
   overflow-x: hidden;
   overflow-y: hidden;
+  z-index: 12;
 }
 
 .relativecontainer {
@@ -517,6 +539,7 @@ button.greybtn:hover {
 }
 
 .contentwidth {
+  z-index: 7;
   width: 50%;
 }
 
@@ -532,14 +555,14 @@ button.greybtn:hover {
 
 .absolutesvg {
   position: absolute;
-  left: 0;
+  left: 60px;
   right: 0;
   bottom: -20px;
 }
 
 .absolutesvg2 {
   position: absolute;
-  left: 0;
+  left: 60px;
   right: 0;
   bottom: -50px;
 }
@@ -602,6 +625,12 @@ button.greybtn:hover {
   top: 510px;
 }
 
+.facilatorperson {
+  border-radius: 50%;
+  width: 204px;
+  height: 205px;
+}
+
 .absoluteicon1 {
   position: absolute;
   top: -50px;
@@ -613,6 +642,13 @@ button.greybtn:hover {
   top: 90px;
   z-index: -1;
   left: 120px;
+}
+
+.absoluteimage4 {
+  position: absolute;
+  top: 310px;
+  z-index: -1;
+  left: 20px;
 }
 
 .absoluteicon2 {
@@ -637,7 +673,7 @@ button.greybtn:hover {
 }
 
 .z4 {
-  z-index: 5;
+  z-index: 15 !important;
 }
 
 .imgcontain {
@@ -712,13 +748,17 @@ button.greybtn:hover {
   width: 8%;
 }
 .footerflex .flex2 {
-  width: 40%;
+  width: 30%;
 }
 .footerflex .flex3 {
   width: 10%;
 }
 
 @media (max-width: 1015px) {
+  .footerflex .flex2 {
+    width: 40%;
+  }
+
   .topsection {
     height: 100vh;
   }
@@ -734,6 +774,10 @@ button.greybtn:hover {
   }
 }
 @media (max-height: 675px) {
+  .topsection2 {
+    height: 100vh;
+  }
+
   .topsection {
     height: 100vh;
     overflow-y: hidden;
@@ -817,12 +861,16 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 767.9px) {
+  .sectionrelative {
+    top: 20px;
+  }
+
   .datewhite {
     height: 30%;
   }
 
   .afterabsolute {
-    margin-top: 250px;
+    margin-top: 350px;
   }
 
   .resetmobilebottom .border-bottom {
@@ -842,6 +890,9 @@ button.greybtn:hover {
     grid-auto-flow: row;
     grid-template-areas: "greenbox1" "greenbox2" "greenbox3" "greenbox4";
   }
+  .greenboxcontainer .whiteborderright {
+    border-right: none;
+  }
 
   .absolutefacilators {
     left: 0px;
@@ -852,12 +903,13 @@ button.greybtn:hover {
     height: 90px;
   }
 
-  .whitebg.box {
-    background-color: #f3f3f3;
-  }
   .whitebg h2.mainmerriheader2,
 .whitebg p.medparagraph {
     font-size: 10px;
+  }
+
+  .mainmerriheader2 {
+    font-size: 12px;
   }
 
   .largemobilebtn button.btn {
@@ -919,12 +971,20 @@ button.greybtn:hover {
     margin-top: 40px;
   }
 
+  .verticalmargincenter2 {
+    margin-bottom: 160px;
+  }
+
   .absoluteimage2 {
     top: 240px;
   }
 
   .absoluteimage3 {
     top: -50px;
+  }
+
+  .absoluteimage4 {
+    top: 200px;
   }
 
   .absoluteimage1 {

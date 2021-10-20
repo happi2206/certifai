@@ -45,6 +45,7 @@ $fontweight-bold900: 900;
 
 @mixin button {
   border-radius: 18px;
+  padding: 12px 30px;
   cursor: pointer;
   @include paragraph;
   font-weight: $fontweight-bold700;
@@ -100,6 +101,11 @@ html {
   margin-bottom: 60px;
 }
 
+.verticalmargincenter2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .horizontalpadding {
   padding-left: 200px;
   padding-right: 200px;
@@ -121,10 +127,20 @@ html {
 }
 
 .sectionrelative {
-  height: 20vh;
+  position: relative;
+
+  top: 120px;
+}
+
+.afterabsolute {
+  margin-top: 200px;
 }
 
 // borders
+
+.boldbordertopbig {
+  border-bottom: 5px solid $dark-blue;
+}
 
 .borderright {
   border-right: 1.5px solid #000;
@@ -189,7 +205,7 @@ html {
 .medparagraph {
   @include paragraph;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
 }
 .medparagraph2 {
   @include paragraph;
@@ -204,7 +220,7 @@ html {
 .biggestparagraph {
   @include paragraph;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 25px;
 }
 
 .mainmerriheader {
@@ -284,13 +300,13 @@ button.genbtncertifai {
 
 button.whitebtn {
   background-color: #fff;
-  color: #000;
+  color: $dark-blue;
   border: 1px solid #fff;
   @include button;
 
   &:hover {
-    border: 1px solid #000;
-    background-color: #000;
+    border: 1px solid $dark-blue;
+    background-color: $dark-blue;
     color: #fff;
   }
 
@@ -450,9 +466,10 @@ button.greybtn {
 }
 
 .topsection2 {
-  min-height: 40vh;
+  height: 40vh;
   overflow-x: hidden;
   overflow-y: hidden;
+  z-index: 12;
 }
 
 .relativecontainer {
@@ -460,6 +477,7 @@ button.greybtn {
 }
 
 .contentwidth {
+  z-index: 7;
   width: 50%;
 }
 
@@ -475,14 +493,14 @@ button.greybtn {
 
 .absolutesvg {
   position: absolute;
-  left: 0;
+  left: 60px;
   right: 0;
   bottom: -20px;
 }
 
 .absolutesvg2 {
   position: absolute;
-  left: 0;
+  left: 60px;
   right: 0;
   bottom: -50px;
 }
@@ -557,6 +575,17 @@ button.greybtn {
   }
 }
 
+// .teachsectionimg {
+//   height: 220px;
+//   width: 474px;
+// }
+
+.facilatorperson {
+  border-radius: 50%;
+  width: 204px;
+  height: 205px;
+}
+
 .absoluteicon1 {
   position: absolute;
   top: -50px;
@@ -568,6 +597,13 @@ button.greybtn {
   top: 90px;
   z-index: -1;
   left: 120px;
+}
+
+.absoluteimage4 {
+  position: absolute;
+  top: 310px;
+  z-index: -1;
+  left: 20px;
 }
 
 .absoluteicon2 {
@@ -592,7 +628,7 @@ button.greybtn {
 }
 
 .z4 {
-  z-index: 5;
+  z-index: 15 !important;
 }
 
 .imgcontain {
@@ -688,7 +724,7 @@ button.greybtn {
     width: 8%;
   }
   .flex2 {
-    width: 40%;
+    width: 30%;
   }
   .flex3 {
     width: 10%;
@@ -698,6 +734,12 @@ button.greybtn {
 // mobile and tabs responsive
 
 @media (max-width: 1015px) {
+  .footerflex {
+    .flex2 {
+      width: 40%;
+    }
+  }
+
   .topsection {
     height: 100vh;
   }
@@ -715,6 +757,9 @@ button.greybtn {
 }
 
 @media (max-height: 675px) {
+  .topsection2 {
+    height: 100vh;
+  }
   .topsection {
     height: 100vh;
     overflow-y: hidden;
@@ -816,11 +861,14 @@ button.greybtn {
 }
 
 @media (max-width: 767.9px) {
+  .sectionrelative {
+    top: 20px;
+  }
   .datewhite {
     height: 30%;
   }
   .afterabsolute {
-    margin-top: 250px;
+    margin-top: 350px;
   }
   .resetmobilebottom {
     .border-bottom {
@@ -839,6 +887,10 @@ button.greybtn {
 
     grid-auto-flow: row;
     grid-template-areas: 'greenbox1' 'greenbox2' 'greenbox3' 'greenbox4';
+
+    .whiteborderright {
+      border-right: none;
+    }
   }
 
   .absolutefacilators {
@@ -850,13 +902,13 @@ button.greybtn {
     height: 90px;
   }
   .whitebg {
-    &.box {
-      background-color: $med-grey-bg;
-    }
     h2.mainmerriheader2,
     p.medparagraph {
       font-size: 10px;
     }
+  }
+  .mainmerriheader2 {
+    font-size: 12px;
   }
   .largemobilebtn {
     button.btn {
@@ -923,12 +975,19 @@ button.greybtn {
     }
   }
 
+  .verticalmargincenter2 {
+    margin-bottom: 160px;
+  }
+
   .absoluteimage2 {
     top: 240px;
   }
 
   .absoluteimage3 {
     top: -50px;
+  }
+  .absoluteimage4 {
+    top: 200px;
   }
 
   .absoluteimage1 {
