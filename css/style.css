@@ -790,7 +790,7 @@ button.greybtn:hover {
 }
 @media (max-height: 715px) {
   .sectionrelative {
-    bottom: 90px;
+    bottom: -40px;
   }
 }
 @media (max-width: 1015px) {
