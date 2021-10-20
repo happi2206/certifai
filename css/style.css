@@ -67,12 +67,9 @@ html body main {
 }
 
 .sectionrelative {
-  position: relative;
-  top: 120px;
-}
-
-.afterabsolute {
-  margin-top: 200px;
+  position: absolute;
+  z-index: 13;
+  bottom: 170px;
 }
 
 .boldbordertopbig {
@@ -528,7 +525,7 @@ button.greybtn:hover {
 }
 
 .topsection2 {
-  height: 40vh;
+  height: 50vh;
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 12;
@@ -807,7 +804,7 @@ button.greybtn:hover {
 }
 @media (max-height: 675px) {
   .topsection2 {
-    height: 100vh;
+    height: 60vh;
   }
 
   .topsection {
@@ -910,7 +907,7 @@ button.greybtn:hover {
   }
 
   .sectionrelative {
-    top: 20px;
+    bottom: -120px;
   }
 
   .datewhite {
@@ -923,6 +920,10 @@ button.greybtn:hover {
 
   .resetmobilebottom .border-bottom {
     border-bottom: none !important;
+  }
+
+  .newmargin {
+    margin-top: 150px;
   }
 
   .mobileborderright {
