@@ -636,6 +636,60 @@ button.greybtn {
   height: 193px;
 }
 
+// blue line
+
+// blue mobile
+
+.mobverticalline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    left: 3px;
+    top: -25px;
+    height: calc(100% - 70px);
+  }
+  // .vertical {
+  //   position: relative;
+  //   padding-left: 15px;
+  //   margin-bottom: 15px;
+  //   &:before {
+  //     content: '';
+  //     display: inline-block;
+  //     width: 8px;
+  //     height: 8px;
+  //     background: #fff;
+  //     position: absolute;
+  //     left: 0;
+  //     top: 5px;
+  //     border-radius: 10px;
+  //   }
+  // }
+}
+
+// blue desktop
+
+.deskhorizontalline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 37px;
+    top: 23px;
+    width: 75%;
+  }
+}
+
 //
 
 .greyboxcontainer {
@@ -861,6 +915,26 @@ button.greybtn {
 }
 
 @media (max-width: 767.9px) {
+  .icandiet {
+    .numbercircle {
+      width: 10%;
+    }
+
+    .maindiet {
+      width: 90%;
+    }
+  }
+
+  .deskhorizontalline {
+    &:before {
+      width: 2px;
+      background: #fff;
+      position: absolute;
+      left: 40px;
+      top: 23px;
+      height: 77%;
+    }
+  }
   .sectionrelative {
     top: 20px;
   }
@@ -1025,6 +1099,15 @@ button.greybtn {
   }
 }
 
+@media (max-width: 641.9px) {
+  .deskhorizontalline {
+    &:before {
+      width: 2px;
+      left: 37px;
+    }
+  }
+}
+
 @media (max-width: 607.9px) {
   .mainmerriheader {
     font-size: 16px;
@@ -1058,6 +1141,14 @@ button.greybtn {
 }
 
 @media (max-width: 547.9px) {
+  .deskhorizontalline {
+    &:before {
+      left: 35px;
+      top: 23px;
+      height: 77%;
+    }
+  }
+
   .horizontalpadding {
     padding-left: 10px;
     padding-right: 10px;
@@ -1068,6 +1159,42 @@ button.greybtn {
 }
 
 @media (max-width: 486.9px) {
+  .icandiet {
+    .numbercircle {
+      width: 15%;
+    }
+
+    .maindiet {
+      width: 89%;
+    }
+  }
+  .deskhorizontalline {
+    &:before {
+      top: 37px;
+    }
+  }
+  .topsection {
+    height: 100vh;
+  }
+}
+@media (max-width: 356.9px) {
+  .icandiet {
+    .numbercircle {
+      width: 17%;
+    }
+
+    .maindiet {
+      width: 83%;
+    }
+  }
+  .deskhorizontalline {
+    &:before {
+      left: 30px;
+      top: 39px;
+      height: 77%;
+    }
+  }
+
   .topsection {
     height: 100vh;
   }

@@ -681,6 +681,38 @@ button.greybtn:hover {
   height: 193px;
 }
 
+.mobverticalline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.mobverticalline:before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  background: #fff;
+  position: absolute;
+  left: 3px;
+  top: -25px;
+  height: calc(100% - 70px);
+}
+
+.deskhorizontalline {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.deskhorizontalline:before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 37px;
+  top: 23px;
+  width: 75%;
+}
+
 .greyboxcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -861,6 +893,22 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 767.9px) {
+  .icandiet .numbercircle {
+    width: 10%;
+  }
+  .icandiet .maindiet {
+    width: 90%;
+  }
+
+  .deskhorizontalline:before {
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    left: 40px;
+    top: 23px;
+    height: 77%;
+  }
+
   .sectionrelative {
     top: 20px;
   }
@@ -1019,6 +1067,12 @@ button.greybtn:hover {
     padding-right: 50px;
   }
 }
+@media (max-width: 641.9px) {
+  .deskhorizontalline:before {
+    width: 2px;
+    left: 37px;
+  }
+}
 @media (max-width: 607.9px) {
   .mainmerriheader {
     font-size: 16px;
@@ -1050,6 +1104,12 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 547.9px) {
+  .deskhorizontalline:before {
+    left: 35px;
+    top: 23px;
+    height: 77%;
+  }
+
   .horizontalpadding {
     padding-left: 10px;
     padding-right: 10px;
@@ -1060,6 +1120,35 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 486.9px) {
+  .icandiet .numbercircle {
+    width: 15%;
+  }
+  .icandiet .maindiet {
+    width: 89%;
+  }
+
+  .deskhorizontalline:before {
+    top: 37px;
+  }
+
+  .topsection {
+    height: 100vh;
+  }
+}
+@media (max-width: 356.9px) {
+  .icandiet .numbercircle {
+    width: 17%;
+  }
+  .icandiet .maindiet {
+    width: 83%;
+  }
+
+  .deskhorizontalline:before {
+    left: 30px;
+    top: 39px;
+    height: 77%;
+  }
+
   .topsection {
     height: 100vh;
   }
