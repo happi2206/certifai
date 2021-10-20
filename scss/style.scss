@@ -783,6 +783,18 @@ button.greybtn {
 
 // mobile and tabs responsive
 
+@media (max-height: 815px) {
+  .sectionrelative {
+    bottom: -20px;
+  }
+}
+
+@media (max-height: 715px) {
+  .sectionrelative {
+    bottom: 90px;
+  }
+}
+
 @media (max-width: 1015px) {
   .footerflex {
     .flex2 {
