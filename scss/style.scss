@@ -1141,6 +1141,9 @@ button.greybtn {
 }
 
 @media (max-width: 547.9px) {
+  .sectionrelative {
+    bottom: -170px;
+  }
   .deskhorizontalline {
     &:before {
       left: 35px;
