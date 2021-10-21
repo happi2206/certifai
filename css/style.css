@@ -793,6 +793,12 @@ button.greybtn:hover {
     bottom: -40px;
   }
 }
+@media (max-width: 1440px) {
+  .absolutesvg,
+.absolutesvg2 {
+    left: 20px;
+  }
+}
 @media (max-width: 1015px) {
   .footerflex .flex2 {
     width: 40%;
@@ -813,6 +819,11 @@ button.greybtn:hover {
   }
 }
 @media (max-height: 675px) {
+  .absolutesvg,
+.absolutesvg2 {
+    left: 0px;
+  }
+
   .topsection2 {
     height: 60vh;
   }

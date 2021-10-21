@@ -795,6 +795,12 @@ button.greybtn {
   }
 }
 
+@media (max-width: 1440px) {
+  .absolutesvg,
+  .absolutesvg2 {
+    left: 20px;
+  }
+}
 @media (max-width: 1015px) {
   .footerflex {
     .flex2 {
@@ -819,6 +825,10 @@ button.greybtn {
 }
 
 @media (max-height: 675px) {
+  .absolutesvg,
+  .absolutesvg2 {
+    left: 0px;
+  }
   .topsection2 {
     height: 60vh;
   }
