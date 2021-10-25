@@ -922,6 +922,10 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 767.9px) {
+  .heightfooterp {
+    height: auto;
+  }
+
   .icandiet .numbercircle {
     width: 10%;
   }
