@@ -216,7 +216,7 @@ html {
 .biggestparagraph {
   @include paragraph;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 28px;
 }
 
 .mainmerriheader {
@@ -278,6 +278,23 @@ button.loginbtncertifai {
 }
 
 button.genbtncertifai {
+  background-color: $dark-blue;
+  color: #fff;
+  border: 1px solid $dark-blue;
+  @include button;
+
+  &:hover {
+    border: 1px solid $dark-blue;
+    background-color: #fff;
+    color: $dark-blue;
+  }
+
+  &.rounded10 {
+    border-radius: 10px;
+  }
+}
+
+.genbtncertifai {
   background-color: $dark-blue;
   color: #fff;
   border: 1px solid $dark-blue;
@@ -456,7 +473,6 @@ button.greybtn {
 // sections
 
 .topsection {
-  height: 80vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -745,6 +761,18 @@ button.greybtn {
   }
 }
 
+.width75 {
+  width: 75%;
+}
+
+.height50 {
+  min-height: 527px;
+}
+
+.heightfooterp {
+  height: 70px;
+}
+
 //accordion
 .blueaccordion {
   width: 80vw;
@@ -807,21 +835,11 @@ button.greybtn {
       width: 40%;
     }
   }
-
-  .topsection {
-    height: 100vh;
-  }
 }
 @media (max-width: 752px) {
-  .topsection {
-    height: 80vh;
-  }
 }
 
 @media (max-height: 762px) {
-  .topsection {
-    height: 90vh;
-  }
 }
 
 @media (max-height: 675px) {
@@ -832,16 +850,9 @@ button.greybtn {
   .topsection2 {
     height: 60vh;
   }
-  .topsection {
-    height: 100vh;
-    overflow-y: hidden;
-  }
 }
 
 @media (max-height: 562px) {
-  .topsection {
-    height: 130vh;
-  }
 }
 
 @media (max-width: 1270px) {
@@ -1017,19 +1028,19 @@ button.greybtn {
 
   .absolutepeople {
     &.absolutesvgpeople1 {
-      top: 10px;
+      top: -10px;
     }
 
     &.absolutesvgpeople2 {
-      top: 40px;
+      top: 20px;
     }
 
     &.absolutesvgpeople3 {
-      top: 70px;
+      top: 40px;
     }
 
     &.absolutesvgpeople4 {
-      top: 100px;
+      top: 60px;
     }
   }
   .horizontalspacing {
@@ -1056,6 +1067,14 @@ button.greybtn {
 
   .width100 {
     width: 100%;
+  }
+
+  .width75 {
+    width: 95%;
+  }
+
+  .height50 {
+    min-height: auto;
   }
 
   .contentwidth {
@@ -1131,14 +1150,21 @@ button.greybtn {
 }
 
 @media (max-width: 607.9px) {
+  .greyboxes {
+    h2.mainmerriheader2 {
+      font-size: 10px;
+      line-height: 13px;
+    }
+
+    p.medparagraph {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
   .mainmerriheader {
     font-size: 16px;
-    line-height: 21px;
+    line-height: 23px;
     z-index: 12;
-
-    &.bluecolor {
-      color: $dark-green;
-    }
   }
 
   .biggerparagraph,
@@ -1146,7 +1172,7 @@ button.greybtn {
   .medparagraph2,
   .biggestparagraph {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 20px;
   }
 
   .mainmerriheader3,
@@ -1178,9 +1204,6 @@ button.greybtn {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .topsection {
-    height: 60vh;
-  }
 }
 
 @media (max-width: 486.9px) {
@@ -1197,9 +1220,6 @@ button.greybtn {
     &:before {
       top: 37px;
     }
-  }
-  .topsection {
-    height: 100vh;
   }
 }
 @media (max-width: 356.9px) {
@@ -1218,9 +1238,5 @@ button.greybtn {
       top: 39px;
       height: 77%;
     }
-  }
-
-  .topsection {
-    height: 100vh;
   }
 }

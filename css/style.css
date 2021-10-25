@@ -184,7 +184,7 @@ html body main {
   line-height: 12px;
   letter-spacing: -0.03em;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 28px;
 }
 
 .mainmerriheader {
@@ -315,6 +315,30 @@ button.genbtncertifai:hover {
   color: #1678c1;
 }
 button.genbtncertifai.rounded10 {
+  border-radius: 10px;
+}
+
+.genbtncertifai {
+  background-color: #1678c1;
+  color: #fff;
+  border: 1px solid #1678c1;
+  border-radius: 18px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.genbtncertifai:hover {
+  border: 1px solid #1678c1;
+  background-color: #fff;
+  color: #1678c1;
+}
+.genbtncertifai.rounded10 {
   border-radius: 10px;
 }
 
@@ -519,7 +543,6 @@ button.greybtn:hover {
 }
 
 .topsection {
-  height: 80vh;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -755,6 +778,18 @@ button.greybtn:hover {
   grid-area: greenbox4;
 }
 
+.width75 {
+  width: 75%;
+}
+
+.height50 {
+  min-height: 527px;
+}
+
+.heightfooterp {
+  height: 70px;
+}
+
 .blueaccordion {
   width: 80vw;
 }
@@ -803,20 +838,6 @@ button.greybtn:hover {
   .footerflex .flex2 {
     width: 40%;
   }
-
-  .topsection {
-    height: 100vh;
-  }
-}
-@media (max-width: 752px) {
-  .topsection {
-    height: 80vh;
-  }
-}
-@media (max-height: 762px) {
-  .topsection {
-    height: 90vh;
-  }
 }
 @media (max-height: 675px) {
   .absolutesvg,
@@ -826,16 +847,6 @@ button.greybtn:hover {
 
   .topsection2 {
     height: 60vh;
-  }
-
-  .topsection {
-    height: 100vh;
-    overflow-y: hidden;
-  }
-}
-@media (max-height: 562px) {
-  .topsection {
-    height: 130vh;
   }
 }
 @media (max-width: 1270px) {
@@ -991,16 +1002,16 @@ button.greybtn:hover {
   }
 
   .absolutepeople.absolutesvgpeople1 {
-    top: 10px;
+    top: -10px;
   }
   .absolutepeople.absolutesvgpeople2 {
-    top: 40px;
+    top: 20px;
   }
   .absolutepeople.absolutesvgpeople3 {
-    top: 70px;
+    top: 40px;
   }
   .absolutepeople.absolutesvgpeople4 {
-    top: 100px;
+    top: 60px;
   }
 
   .horizontalspacing {
@@ -1027,6 +1038,14 @@ button.greybtn:hover {
 
   .width100 {
     width: 100%;
+  }
+
+  .width75 {
+    width: 95%;
+  }
+
+  .height50 {
+    min-height: auto;
   }
 
   .contentwidth {
@@ -1096,13 +1115,19 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 607.9px) {
+  .greyboxes h2.mainmerriheader2 {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .greyboxes p.medparagraph {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
   .mainmerriheader {
     font-size: 16px;
-    line-height: 21px;
+    line-height: 23px;
     z-index: 12;
-  }
-  .mainmerriheader.bluecolor {
-    color: #167c1a;
   }
 
   .biggerparagraph,
@@ -1110,7 +1135,7 @@ button.greybtn:hover {
 .medparagraph2,
 .biggestparagraph {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 20px;
   }
 
   .mainmerriheader3,
@@ -1140,10 +1165,6 @@ button.greybtn:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  .topsection {
-    height: 60vh;
-  }
 }
 @media (max-width: 486.9px) {
   .icandiet .numbercircle {
@@ -1155,10 +1176,6 @@ button.greybtn:hover {
 
   .deskhorizontalline:before {
     top: 37px;
-  }
-
-  .topsection {
-    height: 100vh;
   }
 }
 @media (max-width: 356.9px) {
@@ -1173,10 +1190,6 @@ button.greybtn:hover {
     left: 30px;
     top: 39px;
     height: 77%;
-  }
-
-  .topsection {
-    height: 100vh;
   }
 }
 
