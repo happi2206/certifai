@@ -67,9 +67,22 @@ html body main {
 }
 
 .sectionrelative {
-  position: absolute;
+  position: relative;
   z-index: 13;
-  bottom: 170px;
+  margin-top: 70px;
+  background-color: #d0ebd1;
+}
+
+.boxesabsoluterel {
+  position: absolute;
+  top: -80px;
+}
+
+.box h2 {
+  height: 29px;
+}
+.box p {
+  height: 65px;
 }
 
 .boldbordertopbig {
@@ -548,7 +561,6 @@ button.greybtn:hover {
 }
 
 .topsection2 {
-  height: 50vh;
   overflow-x: hidden;
   overflow-y: hidden;
   z-index: 12;
@@ -790,6 +802,10 @@ button.greybtn:hover {
   height: 70px;
 }
 
+.height25 {
+  height: 20px;
+}
+
 .blueaccordion {
   width: 80vw;
 }
@@ -818,20 +834,109 @@ button.greybtn:hover {
   width: 10%;
 }
 
-@media (max-height: 815px) {
-  .sectionrelative {
-    bottom: -20px;
-  }
+.nameclassroom {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
 }
-@media (max-height: 715px) {
-  .sectionrelative {
-    bottom: -40px;
-  }
+
+.nameclassroom.nameclassroominput input,
+.nameclassroom.nameclassroominput select {
+  background: #f2f2f2;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  color: #706969;
 }
+
+.nameclassroom textarea {
+  background: #f2f2f2;
+  border: none !important;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  color: #706969;
+}
+
+/*--------------------select-reset----------------------*/
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 220px;
+  height: 41px;
+  line-height: 3;
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 30px !important;
+}
+
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #083836;
+  cursor: pointer;
+}
+
+.alignicons {
+  position: relative;
+}
+
+/* Arrow */
+.alignicons::after {
+  content: "\f078";
+  font-family: "FontAwesome";
+  color: #000;
+  position: absolute;
+  bottom: 12px;
+  right: 4px;
+  padding: 0 1em;
+  cursor: pointer;
+  font-size: 12px;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+
 @media (max-width: 1440px) {
   .absolutesvg,
 .absolutesvg2 {
     left: 20px;
+  }
+}
+@media (max-width: 1038px) {
+  .box h2 {
+    height: 49px;
+  }
+  .box p {
+    height: 105px;
   }
 }
 @media (max-width: 1015px) {
@@ -843,10 +948,6 @@ button.greybtn:hover {
   .absolutesvg,
 .absolutesvg2 {
     left: 0px;
-  }
-
-  .topsection2 {
-    height: 60vh;
   }
 }
 @media (max-width: 1270px) {
@@ -916,12 +1017,26 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 967.9px) {
+  .box h2 {
+    height: 59px;
+  }
+  .box p {
+    height: 125px;
+  }
+
   .imgcontain {
     width: 100px;
     height: 123px;
   }
 }
 @media (max-width: 767.9px) {
+  .box h2 {
+    height: 35px;
+  }
+  .box p {
+    height: 75px;
+  }
+
   .heightfooterp {
     height: auto;
   }
@@ -940,10 +1055,6 @@ button.greybtn:hover {
     left: 40px;
     top: 23px;
     height: 77%;
-  }
-
-  .sectionrelative {
-    bottom: -120px;
   }
 
   .datewhite {
@@ -1064,10 +1175,6 @@ button.greybtn:hover {
     margin-top: 40px;
   }
 
-  .verticalmargincenter2 {
-    margin-bottom: 160px;
-  }
-
   .absoluteimage2 {
     top: 240px;
   }
@@ -1155,10 +1262,6 @@ button.greybtn:hover {
   }
 }
 @media (max-width: 547.9px) {
-  .sectionrelative {
-    bottom: -190px;
-  }
-
   .deskhorizontalline:before {
     left: 35px;
     top: 23px;
@@ -1180,6 +1283,11 @@ button.greybtn:hover {
 
   .deskhorizontalline:before {
     top: 37px;
+  }
+}
+@media (max-width: 385.9px) {
+  .newmargin {
+    margin-top: 180px;
   }
 }
 @media (max-width: 356.9px) {

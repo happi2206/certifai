@@ -346,14 +346,22 @@
                                       </div>
                                     </div>
 
+                                    <!--new changes. changed here -->
+
                                     <div class="bluecolorbg rounded px-3 py-2">
-                                      <i
-                                        class="
-                                          fa fa-long-arrow-right
-                                          text-white
-                                        "
-                                        aria-hidden="true"
-                                      ></i>
+                                      <a
+                                        href="#"
+                                        data-toggle="modal"
+                                        data-target="#modalWaitList"
+                                      >
+                                        <i
+                                          class="
+                                            fa fa-long-arrow-right
+                                            text-white
+                                          "
+                                          aria-hidden="true"
+                                        ></i>
+                                      </a>
                                     </div>
                                   </div>
                                 </div></div
@@ -1034,7 +1042,7 @@
                   href="#"
                   class="bluecolor generalparagraph bold900"
                   data-toggle="modal"
-                  data-target="#modalReportBug"
+                  data-target="#modalForm"
                 >
                   <u> Report a bug</u>
                 </a>
@@ -1060,7 +1068,7 @@
                   href="#"
                   class="bluecolor generalparagraph bold900"
                   data-toggle="modal"
-                  data-target="#modalSuggestion"
+                  data-target="#modalForm"
                 >
                   <u> Share a Suggestion</u>
                 </a>
@@ -1086,7 +1094,7 @@
                   href="#"
                   class="bluecolor generalparagraph bold900"
                   data-toggle="modal"
-                  data-target="#modalShareStory"
+                  data-target="#modalForm"
                 >
                   <u> Share your story</u>
                 </a>
@@ -1113,7 +1121,7 @@
                   href="#"
                   class="bluecolor generalparagraph bold900"
                   data-toggle="modal"
-                  data-target="#modalContactUs"
+                  data-target="#modalForm"
                 >
                   <u> Reach Out</u>
                 </a>
@@ -1250,6 +1258,297 @@
           </div>
         </div>
       </footer>
+
+      <!-- modal join waitlist -->
+      <div
+        class="modal fade modal-full-screen"
+        id="modalWaitList"
+        data-backdrop="static"
+        data-keyboard="false"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+          <div class="modal-content mb-5">
+            <div class="modal-body p-0 m-0 mb-5 py-5">
+              <div class="px-md-5 px-3 py-5">
+                <div class="d-flex justify-content-center">
+                  <div class="text-center">
+                    <p class="mainmerriheader2 text-center my-3 mb-0">
+                      Project Management Professional Prep Course
+                    </p>
+
+                    <div class="text-center">
+                      <p class="generalparagraph">
+                        The course is designed to enable students to prepare
+                        financial statements including consolidated financial
+                        statements.The course is designed to enable students to
+                        prepare financial statements including consolidated
+                        financial statements
+                      </p>
+                    </div>
+
+                    <div class="nameclassroom nameclassroominput">
+                      <label class="generalparagraph bold700 darkergray my-3"
+                        >Your Email Address</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+
+                    <div class="px-1 largemobilebtn pb-3">
+                      <button class="btn genbtncertifai rounded10 mb-0">
+                        Join Waitlist
+                      </button>
+                    </div>
+
+                    <a
+                      class="medparagraph px-4 text-dark text-center"
+                      data-dismiss="modal"
+                    >
+                      <u> close</u>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal form -->
+      <div
+        class="modal fade modal-full-screen"
+        id="modalForm"
+        data-backdrop="static"
+        data-keyboard="false"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+          <div class="modal-content mb-5">
+            <div class="modal-header px-md-5 px-3 py-md-4 py-2">
+              <h5 class="modal-title">
+                <div class="">
+                  <h4 class="mainmerriheader2">Request a Course</h4>
+                  <p class="generalparagraph my-3">
+                    The course is designed to enable students to prepare
+                    financial statements including consolidated financial
+                    statements.The course is designed to enable students to
+                    prepare financial statements including consolidated
+                    financial statements
+                  </p>
+                </div>
+              </h5>
+              <div class="mx-1">
+                <button
+                  type="button"
+                  class="closemodalbtn btn px-4"
+                  data-dismiss="modal"
+                >
+                  close
+                </button>
+              </div>
+            </div>
+            <div class="modal-body p-0 m-0">
+              <form class="nameclassroom nameclassroominput">
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label class="generalparagraph bold700 darkergray my-3"
+                      >Enter your Name</label
+                    >
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                  <div class="col-md-12">
+                    <label class="generalparagraph bold700 darkergray my-3"
+                      >Your Email Address</label
+                    >
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-6">
+                    <label class="generalparagraph bold700 darkergray my-3"
+                      >Form 1</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Form 1"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="generalparagraph bold700 darkergray my-3"
+                      >Form 2</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Form 2"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group row my-3">
+                  <div class="col-12">
+                    <label
+                      for="message-text"
+                      class="
+                        generalparagraph
+                        bold700
+                        my-3
+                        d-flex
+                        align-items-center
+                      "
+                      >Location
+                    </label>
+                    <div class="alignicons">
+                      <select
+                        id="inputState"
+                        class="form-control select topselect"
+                      >
+                        <option selected>Select 1</option>
+                        <option>2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <label
+                  for=""
+                  class="
+                    generalparagraph
+                    bold700
+                    my-3
+                    d-flex
+                    align-items-center
+                  "
+                  >Radio
+                </label>
+
+                <div class="row">
+                  <div class="radio custom col-md-2 col-6">
+                    <label class="generalparagraph d-flex align-items-center">
+                      <input type="radio" name="foo" class="" />
+                      <div class="ml-2 d-flex align-items-center">
+                        <span class="mr-2">Radio 1</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="radio custom col-md-2 col-6">
+                    <label class="generalparagraph d-flex align-items-center">
+                      <input type="radio" />
+                      <div class="ml-2 d-flex align-items-center">
+                        <span class="mr-2">Radio 2</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="radio custom col-md-2 col-6">
+                    <label class="generalparagraph d-flex align-items-center">
+                      <input type="radio" />
+                      <div class="ml-2 d-flex align-items-center">
+                        <span class="mr-2">Radio 3</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <label
+                  for=""
+                  class="
+                    generalparagraph
+                    bold700
+                    mt-3
+                    d-flex
+                    align-items-center
+                  "
+                  >Location
+                </label>
+
+                <div class="row">
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 1</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                  <div class="col-md-2 col-6 d-flex align-items-center">
+                    <form action="">
+                      <input type="checkbox" class="p-0 m-0" />
+                    </form>
+                    <p class="generalparagraph ml-2 mb-0">Checkbox 2</p>
+                  </div>
+                </div>
+
+                <div class="nameclassroom pt-0 form-group row ml-0">
+                  <label for="textarea" class="generalparagraph bold700"
+                    >About</label
+                  >
+                  <textarea
+                    name=""
+                    id="textarea"
+                    cols="133"
+                    rows="5"
+                    class="form-control"
+                    placeholder=""
+                  ></textarea>
+                </div>
+              </form>
+
+              <div class="px-4 d-flex justify-content-between">
+                <div class="px-1 largemobilebtn pb-3">
+                  <button class="btn genbtncertifai rounded10 mb-0">
+                    Join Waitlist
+                  </button>
+                </div>
+                <div>
+                  <a
+                    class="medparagraph px-4 text-dark text-center"
+                    data-dismiss="modal"
+                  >
+                    <u> close</u>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
