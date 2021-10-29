@@ -201,6 +201,9 @@ html {
 .bold700 {
   font-weight: $fontweight-bold700 !important;
 }
+.bold400 {
+  font-weight: 400 !important;
+}
 
 .generalparagraph {
   @include paragraph;
@@ -277,6 +280,15 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.robotoheader {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: -0.03em;
 }
 
 // buttons and links
@@ -750,6 +762,10 @@ button.greybtn {
   }
 }
 
+.greyboxes {
+  background-color: $med-grey;
+}
+
 .greenboxcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -777,6 +793,9 @@ button.greybtn {
 
 .width75 {
   width: 75%;
+}
+.width65 {
+  width: 60%;
 }
 
 .height50 {
@@ -862,6 +881,11 @@ button.greybtn {
   color: #706969;
 }
 
+.nameclassroom.nameclassroominput.nameclassroomfullcircle input,
+.nameclassroom.nameclassroominput.nameclassroomfullcircle select {
+  border-radius: 20px;
+  height: 45px;
+}
 /*--------------------select-reset----------------------*/
 
 select {
@@ -1045,6 +1069,10 @@ select {
 }
 
 @media (max-width: 967.9px) {
+  .width65 {
+    width: 100%;
+  }
+
   .box {
     h2 {
       height: 59px;
