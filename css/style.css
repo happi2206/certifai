@@ -69,8 +69,7 @@ html body main {
 .sectionrelative {
   position: relative;
   z-index: 13;
-  margin-top: 70px;
-  background-color: #d0ebd1;
+  bottom: -90px;
 }
 
 .boxesabsoluterel {
@@ -389,6 +388,10 @@ button.whitebtn:hover {
   color: #fff;
 }
 button.whitebtn.rounded10 {
+  border-radius: 10px;
+}
+
+.rounded10 {
   border-radius: 10px;
 }
 
@@ -721,9 +724,33 @@ button.greybtn:hover {
   z-index: 15 !important;
 }
 
+.zmax {
+  z-index: 1054 !important;
+}
+
 .imgcontain {
   width: 160px;
   height: 193px;
+}
+
+.firstnav ul.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: #8a8686;
+  border-radius: 20px;
+}
+
+ul.nav-pills .nav-item .nav-link {
+  background-color: #d0d0d0;
+  border-radius: 20px;
+  color: #fff !important;
+}
+
+.whitebox {
+  background-color: #fff;
+}
+.whitebox ul {
+  list-style: none;
 }
 
 .mobverticalline {
@@ -786,7 +813,7 @@ button.greybtn:hover {
   background-color: #f1f1f1;
 }
 
-.greenboxcontainer {
+.greenboxcontainer:not(.modal.fade) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   z-index: 3;
@@ -794,16 +821,16 @@ button.greybtn:hover {
   background-color: #167c1a;
   grid-template-areas: "greenbox1 greenbox2 greenbox3 greenbox4";
 }
-.greenboxcontainer .greenbox1 {
+.greenboxcontainer:not(.modal.fade) .greenbox1 {
   grid-area: greenbox1;
 }
-.greenboxcontainer .greenbox2 {
+.greenboxcontainer:not(.modal.fade) .greenbox2 {
   grid-area: greenbox2;
 }
-.greenboxcontainer .greenbox3 {
+.greenboxcontainer:not(.modal.fade) .greenbox3 {
   grid-area: greenbox3;
 }
-.greenboxcontainer .greenbox4 {
+.greenboxcontainer:not(.modal.fade) .greenbox4 {
   grid-area: greenbox4;
 }
 
@@ -896,62 +923,6 @@ button.greybtn:hover {
 }
 
 /*--------------------select-reset----------------------*/
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background-image: none;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-
-/* Custom Select */
-.select {
-  position: relative;
-  display: flex;
-  width: 220px;
-  height: 41px;
-  line-height: 3;
-  background: #fff;
-  border-radius: 8px;
-  margin-right: 30px !important;
-}
-
-select {
-  flex: 1;
-  padding: 0 0.5em;
-  color: #083836;
-  cursor: pointer;
-}
-
-.alignicons {
-  position: relative;
-}
-
-/* Arrow */
-.alignicons::after {
-  content: "\f078";
-  font-family: "FontAwesome";
-  color: #000;
-  position: absolute;
-  bottom: 12px;
-  right: 4px;
-  padding: 0 1em;
-  cursor: pointer;
-  font-size: 12px;
-  pointer-events: none;
-  -webkit-transition: 0.25s all ease;
-  -o-transition: 0.25s all ease;
-  transition: 0.25s all ease;
-}
-
 @media (max-width: 1440px) {
   .absolutesvg,
 .absolutesvg2 {
@@ -1061,6 +1032,11 @@ select {
   }
 }
 @media (max-width: 767.9px) {
+  .horizontalspacing.people {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .box h2 {
     height: 35px;
   }
@@ -1083,7 +1059,7 @@ select {
     width: 2px;
     background: #fff;
     position: absolute;
-    left: 40px;
+    left: 50px;
     top: 23px;
     height: 77%;
   }
@@ -1113,9 +1089,8 @@ select {
   }
 
   .greenboxcontainer {
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
-    grid-template-areas: "greenbox1" "greenbox2" "greenbox3" "greenbox4";
+    display: flex !important;
+    flex-direction: column;
   }
   .greenboxcontainer .whiteborderright {
     border-right: none;
@@ -1253,7 +1228,7 @@ select {
 @media (max-width: 641.9px) {
   .deskhorizontalline:before {
     width: 2px;
-    left: 37px;
+    left: 39px;
   }
 }
 @media (max-width: 607.9px) {
@@ -1287,15 +1262,10 @@ select {
     font-size: 16px;
     line-height: 20px;
   }
-
-  .horizontalspacing.people {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 @media (max-width: 547.9px) {
   .deskhorizontalline:before {
-    left: 35px;
+    left: 39px;
     top: 23px;
     height: 77%;
   }
@@ -1332,7 +1302,7 @@ select {
 
   .deskhorizontalline:before {
     left: 30px;
-    top: 39px;
+    top: 43px;
     height: 77%;
   }
 }
