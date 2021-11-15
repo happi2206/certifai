@@ -78,6 +78,9 @@ html body main {
 .collapsewidth1 .inner1 {
   width: 15%;
 }
+.collapsewidth1 .inner2 {
+  width: 85%;
+}
 
 .boxesabsoluterel {
   position: absolute;
