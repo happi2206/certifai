@@ -94,8 +94,8 @@ html {
 // spacings
 
 .horizontalspacing {
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .verticalmargincenter {
@@ -109,13 +109,13 @@ html {
 }
 
 .horizontalpadding {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .horizontalpadding2 {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .absoluteheight {
@@ -133,6 +133,14 @@ html {
   z-index: 13;
 
   bottom: -90px;
+}
+
+.collapsewidth1 {
+  width: 90%;
+
+  .inner1 {
+    width: 15%;
+  }
 }
 
 .boxesabsoluterel {
