@@ -139,7 +139,7 @@ html {
   width: 90%;
 
   .inner1 {
-    width: 100%;
+    width: 15%;
   }
 }
 
@@ -1066,7 +1066,7 @@ ul.nav-pills .nav-item .nav-link {
   }
 }
 
-@media (max-height: 815px) {
+@media (max-width: 815px) {
   .collapsewidth1 {
     width: 95%;
 
