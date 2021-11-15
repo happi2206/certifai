@@ -139,7 +139,7 @@ html {
   width: 90%;
 
   .inner1 {
-    width: 15%;
+    width: 100%;
   }
 }
 
@@ -983,9 +983,6 @@ ul.nav-pills .nav-item .nav-link {
 
 // mobile and tabs responsive
 
-@media (max-height: 815px) {
-}
-
 @media (max-height: 715px) {
 }
 
@@ -1066,6 +1063,16 @@ ul.nav-pills .nav-item .nav-link {
   .horizontalpadding2 {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (max-height: 815px) {
+  .collapsewidth1 {
+    width: 95%;
+
+    .inner1 {
+      width: 100%;
+    }
   }
 }
 

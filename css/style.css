@@ -76,7 +76,7 @@ html body main {
   width: 90%;
 }
 .collapsewidth1 .inner1 {
-  width: 15%;
+  width: 100%;
 }
 
 .boxesabsoluterel {
@@ -986,6 +986,14 @@ ul.nav-pills .nav-item .nav-link {
   .horizontalpadding2 {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media (max-height: 815px) {
+  .collapsewidth1 {
+    width: 95%;
+  }
+  .collapsewidth1 .inner1 {
+    width: 100%;
   }
 }
 @media (max-width: 904px) {
