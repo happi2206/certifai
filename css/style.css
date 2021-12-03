@@ -56,6 +56,11 @@ html body main {
   padding-right: 100px;
 }
 
+.horizontalpadding3 {
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
 .absoluteheight {
   overflow-y: hidden;
 }
@@ -501,6 +506,21 @@ button.greybtn:hover {
   color: #000;
 }
 
+.boxlink2 {
+  border: 1.5px solid #f3f3f3;
+}
+
+.grayboxlinkheader {
+  background-color: #e8e8e8;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.logocontainer {
+  width: 58px;
+  height: 50px;
+}
+
 .torquise {
   color: #37a3a5;
 }
@@ -681,6 +701,11 @@ button.greybtn:hover {
 }
 .absolutefacilators.absolutesvgpeople8 {
   top: 510px;
+}
+
+.teachsectionimg {
+  height: 220px;
+  width: 474px;
 }
 
 .facilatorperson {
@@ -878,6 +903,10 @@ ul.nav-pills .nav-item .nav-link {
   background-color: #f1f1f1;
 }
 
+.rounded20 {
+  border-radius: 20px;
+}
+
 .modal-header.headerbg {
   background-color: #e3e3e3;
 }
@@ -990,6 +1019,11 @@ ul.nav-pills .nav-item .nav-link {
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .horizontalpadding3 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 @media (max-width: 815px) {
   .collapsewidth1 {
@@ -1028,6 +1062,11 @@ ul.nav-pills .nav-item .nav-link {
   }
 
   .horizontalpadding2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .horizontalpadding3 {
     padding-left: 20px;
     padding-right: 20px;
   }
