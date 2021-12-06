@@ -376,19 +376,6 @@ button.whitebtn {
   border-radius: 10px;
 }
 
-button.smallbtn {
-  background-color: $dark-green;
-  color: #fff;
-  border: 1px solid $dark-green;
-  @include button;
-  border-radius: 0;
-
-  &:hover {
-    border: 1px solid $dark-green;
-    background-color: #fff;
-    color: $dark-green;
-  }
-}
 button.downloadbtn {
   background-color: $dark-green;
   color: #fff;
@@ -414,18 +401,22 @@ button.closemodalbtn.btn {
   }
 }
 
-button.greybtn {
+div.greybtn {
   background-color: $dark-grey;
   color: #fff;
   border: 1px solid $dark-grey;
-  @include button;
-  border-radius: 0;
+  @include paragraph;
+  width: fit-content;
+  font-weight: $fontweight-bold700;
+}
 
-  &:hover {
-    border: 1px solid $dark-grey;
-    background-color: #000;
-    color: $dark-grey;
-  }
+div.smallbtn {
+  background-color: $dark-green;
+  color: #fff;
+  border: 1px solid $dark-green;
+  @include paragraph();
+  width: fit-content;
+  font-weight: $fontweight-bold700;
 }
 
 .boxlink {

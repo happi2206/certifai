@@ -410,28 +410,6 @@ button.whitebtn.rounded10 {
   border-radius: 10px;
 }
 
-button.smallbtn {
-  background-color: #167c1a;
-  color: #fff;
-  border: 1px solid #167c1a;
-  border-radius: 18px;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 12px;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-  border-radius: 0;
-}
-button.smallbtn:hover {
-  border: 1px solid #167c1a;
-  background-color: #fff;
-  color: #167c1a;
-}
-
 button.downloadbtn {
   background-color: #167c1a;
   color: #fff;
@@ -474,26 +452,32 @@ button.closemodalbtn.btn:hover {
   color: #000;
 }
 
-button.greybtn {
+div.greybtn {
   background-color: #a8a8a8;
   color: #fff;
   border: 1px solid #a8a8a8;
-  border-radius: 18px;
-  padding: 12px 30px;
-  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
   letter-spacing: -0.03em;
+  width: fit-content;
   font-weight: 700;
-  border-radius: 0;
 }
-button.greybtn:hover {
-  border: 1px solid #a8a8a8;
-  background-color: #000;
-  color: #a8a8a8;
+
+div.smallbtn {
+  background-color: #167c1a;
+  color: #fff;
+  border: 1px solid #167c1a;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  width: fit-content;
+  font-weight: 700;
 }
 
 .boxlink {
